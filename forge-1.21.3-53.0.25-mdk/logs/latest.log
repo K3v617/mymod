@@ -1,0 +1,36 @@
+[04Dez.2024 10:37:04.445] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 237 Datafixer optimizations took 738 milliseconds
+[04Dez.2024 10:37:05.109] [main/WARN] [net.minecraft.SystemReport/]: Failed to get system info for GL Caps
+java.lang.IllegalStateException: Rendersystem called from wrong thread
+	at com.mojang.blaze3d.systems.RenderSystem.constructThreadException(RenderSystem.java:123) ~[forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.assertOnRenderThread(RenderSystem.java:118) ~[forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.getCapsString(RenderSystem.java:458) ~[forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.SystemReport.setDetail(SystemReport.java:70) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.client.Minecraft.fillSystemReport(Minecraft.java:2367) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.client.Minecraft.fillReport(Minecraft.java:2340) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:197) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at mcp.client.Start.main(Start.java:17) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+[04Dez.2024 10:37:05.117] [main/ERROR] [net.minecraftforge.logging.CrashReportAnalyser/]: Failed to append suspected mod(s) to crash report!
+java.lang.NullPointerException: Cannot invoke "cpw.mods.modlauncher.api.IModuleLayerManager.getLayer(cpw.mods.modlauncher.api.IModuleLayerManager$Layer)" because "net.minecraftforge.fml.loading.FMLLoader.moduleLayerManager" is null
+	at net.minecraftforge.fml.loading.FMLLoader.getGameLayer(FMLLoader.java:229) ~[fmlloader-1.21.3-53.0.25.jar:53.0.25]
+	at net.minecraftforge.logging.CrashReportAnalyser.cacheModList(CrashReportAnalyser.java:126) ~[forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraftforge.logging.CrashReportAnalyser.appendSuspectedMods(CrashReportAnalyser.java:38) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.CrashReport.getDetails(CrashReport.java:61) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.CrashReport.getFriendlyReport(CrashReport.java:111) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.CrashReport.getFriendlyReport(CrashReport.java:116) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.client.Minecraft.saveReport(Minecraft.java:908) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.client.Minecraft.crash(Minecraft.java:922) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:198) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at mcp.client.Start.main(Start.java:17) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+[04Dez.2024 10:37:05.120] [main/ERROR] [net.minecraftforge.logging.CrashReportAnalyser/]: Failed to append suspected mod(s) to crash report!
+java.lang.NullPointerException: Cannot invoke "cpw.mods.modlauncher.api.IModuleLayerManager.getLayer(cpw.mods.modlauncher.api.IModuleLayerManager$Layer)" because "net.minecraftforge.fml.loading.FMLLoader.moduleLayerManager" is null
+	at net.minecraftforge.fml.loading.FMLLoader.getGameLayer(FMLLoader.java:229) ~[fmlloader-1.21.3-53.0.25.jar:53.0.25]
+	at net.minecraftforge.logging.CrashReportAnalyser.cacheModList(CrashReportAnalyser.java:126) ~[forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraftforge.logging.CrashReportAnalyser.appendSuspectedMods(CrashReportAnalyser.java:38) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.CrashReport.getDetails(CrashReport.java:61) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.CrashReport.getFriendlyReport(CrashReport.java:111) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.CrashReport.saveToFile(CrashReport.java:134) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.CrashReport.saveToFile(CrashReport.java:147) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.client.Minecraft.saveReport(Minecraft.java:912) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.client.Minecraft.crash(Minecraft.java:922) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:198) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
+	at mcp.client.Start.main(Start.java:17) [forge-1.21.3-53.0.25_mapped_official_1.21.3.jar:?]
